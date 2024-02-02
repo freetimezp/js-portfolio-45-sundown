@@ -35,10 +35,11 @@ body {
     height: 100vh;
     background: #efeae3;
     position: relative;
+    padding: 0 2vw;
 }
 
 nav {
-    padding: 2vw 2vw;
+    padding: 2vw 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -93,23 +94,104 @@ nav {
 }
 
 
+#center {
+    height: 65vh;
+    width: 100%;
+    /* background-color: orange; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid #0000003c;
+    padding-bottom: 2.5vw;
+}
 
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
 
+#center h1 {
+    font-size: 11vw;
+    text-align: right;
+    line-height: 9vw;
+    font-weight: bold;
+}
 
+#page1 video {
+    width: 100%;
+    margin-top: 3vw;
+    border-radius: 30px;
+    position: relative;
+}
 
+#hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    right: 0;
+    top: 68vh;
+}
 
+#hero1 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fe320a, #f03a15);
+    border-radius: 50% 0 0 50%;
+    filter: blur(10px);
+    position: absolute;
+    animation: anime3 7s linear forwards infinite;
+}
 
+#hero2 {
+    width: 30vw;
+    height: 30vw;
+    background: linear-gradient(#9a1b01, #f03a15);
+    border-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+    animation: anime2 7s linear forwards infinite;
+}
 
+#hero3 {
+    width: 30vw;
+    height: 30vw;
+    background: linear-gradient(#fe320a, #8b1d07);
+    border-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+    animation: anime1 7s linear alternate infinite;
+}
 
+@keyframes anime1 {
+    from {
+        transform: translate(55%, -4%);
+    } 
+    to {
+        transform: translate(0%, 10%);
+    }
+}
 
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    } 
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
 
-
-
-
-
-
-
-
+@keyframes anime3 {
+    0% {
+        border-radius: 50% 0 0 50%;
+    } 
+    50% {
+        border-radius: 0% 25% 28% 0%;
+    }
+    100% {
+        border-radius: 50% 0 0 50%;
+    }
+}
 
 
 

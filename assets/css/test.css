@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Neu';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 100px;
+}
+
+#hero1 {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(20px);
+    background-color: rgb(255, 84, 4);
+    position: absolute;
+}
+
+
+#hero2 {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(20px);
+    background-color: rgb(255, 84, 4);
+    position: absolute;
+    animation: anime 3s linear infinite;
+}
+
+@keyframes anime {
+    from {
+        transform: translate(-10%, -10%);
+    } 
+    to {
+        transform: translate(10%, 10%);
+    }
+}
+
+
+
+
+
