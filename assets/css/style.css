@@ -394,7 +394,7 @@ nav h3 {
 }
 
 #page4 {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     background-color: #EFEAE3;
     padding: 10vw 2vw;
@@ -441,14 +441,14 @@ nav h3 {
 }
 
 #page5 {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
 }
 
 
 #footer {
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     background-color: #000;
     color: #fff;
@@ -457,6 +457,9 @@ nav h3 {
     justify-content: flex-end;
     flex-direction: column;
     padding: 1vw 3vw;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
 }
 
 #footer h1 {
@@ -466,7 +469,123 @@ nav h3 {
 #footer-div {
     height: 20vh;
     width: 100%;
-    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+}
+
+#footer-div ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
+}
+
+#footer-div ul a {
+    font-weight: 500;
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+#footer-div ul a:hover {
+    color: #c3bfbf;
+    padding-left: 15px;
+}
+
+#footer-div .form {
+    max-width: 310px;
+}
+
+#footer-div .form p {
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.3;
+    font-size: 1.25em;
+    margin-bottom: 30px;
+}
+
+#footer-div .form input {
+    width: 100%;
+    padding: 5px 10px 7px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #aeadad;
+}
+
+#footer-div .form div {
+    position: relative;
+}
+
+#footer-div .form span {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    font-size: 1.5em;
+}
+
+#footer-div .form input::placeholder {
+    color: #aeadad;
+}
+
+#footer-orange-1 {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 70%;
+    height: 60%;
+    background-color: #fe3f0a;
+    z-index: 1;
+    transform: rotate(-15deg);
+    animation: footerOrange1 6s infinite forwards;
+    filter: blur(30px);
+}
+
+#footer-orange-2 {
+    position: absolute;
+    top: -10%;
+    right: -20%;
+    width: 70%;
+    height: 60%;
+    background-color: #fe3f0a;
+    z-index: 1;
+    transform: rotate(-15deg);
+    animation: footerOrange2 6s infinite forwards;
+    filter: blur(30px);
+}
+
+@keyframes footerOrange1 {
+    0% {
+        transform: rotate(-15deg);
+        filter: blur(30px);
+    }
+    50% {
+        transform: rotate(-3deg);
+        filter: blur(60px);
+    }
+    100% {
+        transform: rotate(-15deg);
+        filter: blur(30px);
+    }
+}
+
+@keyframes footerOrange2 {
+    0% {
+        transform: rotate(25deg);
+        filter: blur(30px);
+    }
+    50% {
+        transform: rotate(7deg);
+        filter: blur(60px);
+    }
+    100% {
+        transform: rotate(25deg);
+        filter: blur(30px);
+    }
 }
 
 #footer-bottom {
@@ -476,6 +595,39 @@ nav h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#footer-bottom span,
+#footer-bottom a {
+    color: #fff;
+    font-size: 1.3fw;
+}
+
+#footer-bottom a {
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+#footer-bottom a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+}
+
+#footer-bottom a:hover {
+    color: #ff2d03;
+}
+
+#footer-bottom a:hover::before {
+    background-color: #ff2d03;
+    left: 0;
 }
 
 #full-scr {
