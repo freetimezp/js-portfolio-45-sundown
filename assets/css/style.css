@@ -27,6 +27,8 @@ html,
 body {
     height: 100%;
     width: 100%;
+    max-width: 100%;
+    overflow-x:hidden;
 }
 
 
@@ -36,6 +38,12 @@ body {
     background: #efeae3;
     position: relative;
     padding: 0 2vw;
+}
+
+#main {
+    /* background-color: #000; */
+    position: relative;
+    z-index: 10;
 }
 
 nav {
@@ -318,7 +326,8 @@ nav {
     padding: 4vw 0;
 }
 
-.page3-featured {
+.page3-featured, 
+.page4-work {
     position: relative;
     left: 3vw;
     bottom: 3vw;
@@ -328,7 +337,8 @@ nav {
     text-transform: uppercase;
 }
 
-.page3-featured::before {
+.page3-featured::before,
+.page4-work::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -378,6 +388,31 @@ nav {
     padding-left: 20px;
 }
 
+.elem .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .content .box-right {
+    display: block;
+    text-align: right;
+}
+
+.elem .content .box-right h5 {
+    font-size: 1.5vw;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.elem .content .box-right p {
+    opacity: .7;
+    font-style: italic;
+}
+
 
 #fixed-image {
     height: 27vw;
@@ -393,6 +428,102 @@ nav {
     background-repeat: no-repeat;
     transition: all .5s ease-in-out;
 }
+
+
+#page4 {
+    width: 100%;
+    height: 60vh;
+    background-color: #efeae3;
+    padding: 10vw 2vw;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 30%;
+    border-left: 1px solid #707070;
+    padding: 1vw 3vw;
+    cursor: grab;
+}
+
+.swiper-slide img {
+    width: 150px;
+    margin-bottom: 1vw;
+    rotate: -10deg;
+}
+
+.swiper-slide p {
+    font-size: 1.1vw;
+    text-align: left;
+    rotate: -10deg;
+}
+
+#page5 {
+    width: 100%;
+    height: 100vh;
+}
+
+#footer {
+    position: fixed;
+    z-index: 9;
+    height: 80vh;
+    width: 100%;
+    bottom: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1vw 3vw;
+}
+
+#footer h1 {
+    text-align: center;
+    font-size: 22vw;
+}
+
+#footer-div {
+    height: 20vh;
+    width: 100%;
+}
+
+#footer-bottom {
+    border-top: 1px solid #919090;
+    height: 10vh;
+    width: 100%;
+}
+
+
+
+@media (max-width: 600px) {
+    #page1 {
+        width: 100vw;
+        padding: 0 2vw;
+    }
+    nav {
+        padding: 8vw 0;
+    }
+    nav img {
+        height: 5vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
