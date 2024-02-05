@@ -60,4 +60,4 @@ function loaderAnimation() {
 swiperAnimation();
 page4Animation();
 menuAnimation();
-//loaderAnimation();
+loaderAnimation();

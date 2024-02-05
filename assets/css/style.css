@@ -377,7 +377,10 @@ nav h3 {
     top: 0;
 }
 
-
+#page3 #nav-part2 {
+    margin-left: 3vw;
+    margin-top: 3vw;
+}
 
 #fixed-image {
     height: 30vw;
@@ -394,7 +397,7 @@ nav h3 {
 }
 
 #page4 {
-    height: 60vh;
+    height: 80vh;
     width: 100%;
     background-color: #EFEAE3;
     padding: 10vw 2vw;
@@ -436,19 +439,82 @@ nav h3 {
 }
 
 .swiper-slide p {
-    font-size: 1.5vw;
+    font-size: 1.1vw;
     rotate: -5deg;
 }
 
 #page5 {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     background-color: #EFEAE3;
+    padding: 1vw 3vw;
+    position: relative;
+}
+
+#page5 .nav.nav-tabs {
+    position: absolute;
+    top: 10%;
+    left: 17vw;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#page5 .nav.nav-tabs .nav-link {
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: #383838;
+    font-size: 2vw;
+    border-left: 5px solid #383838;
+}
+
+#page5 .nav.nav-tabs .nav-link.active {
+    background: transparent;
+    color: #fff;
+    border-color:  #FE320A;
+}
+
+#page5 .tab-content .tab-pane .item {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #000;
+    min-height: 70vh;
+}
+
+#page5 .tab-content .tab-pane .left {
+    width: 45vw;
+}
+
+#page5 .tab-content .tab-pane .left p {
+    color: #fff;
+    max-width: 315px;
+    margin: auto;
+    position: relative;
+    top: 50%;
 }
 
 
+#page5 .tab-content .tab-pane .right {
+    width: 55vw;
+    max-width: 55vw;
+}
+
+#page5 .tab-content .tab-pane .right img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+
+
+
 #footer {
-    height: 75vh;
+    height: 90vh;
     width: 100%;
     background-color: #000;
     color: #fff;
